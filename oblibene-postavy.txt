@@ -1,0 +1,3 @@
+Spiderman	17	muž	ne	2012-07-14	3.8
+Rocky	291	muž	ano	2026-04-18	4.8
+Shrek	30	muž	ano	2024-05-10	4.8
