@@ -32,30 +32,3 @@ with open("postavy.txt", "r", encoding="utf-8") as file, open("oblibene-postavy.
             # Zápis do výstupního souboru oddělený tabulátory (\t)
             vystup_soubor = f"{jmeno}\t{věk}\t{pohlavi}\t{zviratko_text}\t{datum}\t{oblibenost}\n"
             file_out.write(vystup_soubor)
-            
-            okno = tk.Tk()
-            okno.title("Smetana")
-            okno.geometry("300x300")
-
-            label = tk.Label(okno, text="Nivniwho?")
-            label.pack()
-            
-            vstup = tk.Entry(okno)
-            vstup.pack()
-            
-            tlačitko = tk.Button(okno, text="Nemačkat", bg="yellow")
-            tlačitko.pack()
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            okno.mainloop()
