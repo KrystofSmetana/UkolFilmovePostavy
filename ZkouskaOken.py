@@ -38,5 +38,8 @@ nezamestnany = tk.BooleanVar()
 checkbox = tk.Checkbutton(okno, text="Jsi zaměstnaný", variable=nezamestnany)
 checkbox.pack()
 
+jmena = tk.StringVar()
+tk.Radiobutton(okno, text="Karel", variable=jmena, value="Karel").pack()
+
 okno.mainloop()
             
