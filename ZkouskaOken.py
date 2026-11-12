@@ -12,13 +12,31 @@ label.pack()
 vstup = tk.Entry(okno)
 vstup.pack()
             
- #tlačítko
-def dělej():
-    print("ticho")
-tlačitko = tk.Button(okno, text="Nemačkat", bg="yellow", command =dělej)
+#tlačítko co pracuje s textovým polem
+def coJsiNapsal():
+    text = vstup.get()
+    print(text)
+tlačitko = tk.Button(okno, text="Co jsem napsal?", bg="yellow", command =coJsiNapsal)
 tlačitko.pack()
-tlačitko2 = tk.Button(okno, text="FAKT NEMAČKAT", bg="red", command =okno.destroy)
+#tlačítko
+tlačitko2 = tk.Button(okno, text="KONEC!", bg="red", command =okno.destroy)
 tlačitko2.pack()
+
+
+#celkem nechápu
+"""
+def prepis():
+    vysledek.config(text="Nový text")
+tlacitko = tk.Button(okno, text="Přepiš text", command=prepis)
+vstup = tk.Entry(okno)
+vstup.pack()
+vysledek = tk.Label(okno, text="Zatím jsi nic nenapsal")
+vysledek.pack()
+tlacitko.pack()
+"""
+nezamestnany = tk.BooleanVar()
+checkbox = tk.Checkbutton(okno, text="Jsi zaměstnaný", variable=nezamestnany)
+checkbox.pack()
 
 okno.mainloop()
             
